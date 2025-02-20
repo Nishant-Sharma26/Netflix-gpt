@@ -7,6 +7,7 @@ import {auth} from '../utils/firebase';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
+import { PHOTOURL } from '../utils/constant';
 const Login = () => {
     const [isSignInForm, setisSignInForm] = useState(true);
     const  [errorMessage, seterrorMessage] = useState(null);
@@ -35,7 +36,7 @@ const Login = () => {
             const user = userCredential.user;
             updateProfile(user, {
               displayName: name.current.value,
-              photoURL: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
+              photoURL: PHOTOURL
             }).then(() => {
               const { uid, email, displayName, photoURL } = auth.currentUser;
               dispatch(addUser({
@@ -44,7 +45,7 @@ const Login = () => {
                 displayName: displayName,
                 photoURL: photoURL
               }));
-              navigate("/browse")
+          
           
             }).catch((error) => {
               seterrorMessage(error.message);
@@ -64,9 +65,7 @@ const Login = () => {
   .then((userCredential) => {
     // Signed in 
     const user = userCredential.user;
-    console.log(user);
-    navigate("/browse")
-    // ...
+  
   })
   .catch((error) => {
     const errorCode = error.code;

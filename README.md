@@ -13,7 +13,21 @@
 - implemented sign in user Api
 - created Reducer Store with userSlice
 - implemented Sign out feature
-- 
+- update Profile
+- BugFix: Sign up user display name and profile picture updates
+- BugFix: if the user is not logged in Redirect /browse to login page and vice-versa
+- Add Hardecoded values to constant files
+- Register TMDB API & create an app & get access token
+- Get data from tmdb Now playiing movie list
+- created custom hooks for now playing movies
+- create movie Slice
+- updated the store with data
+- Planning for main container and secondary containe
+- fetch data for trailer video
+- embedded the youtube video
+- tailwind classes to look main container awsome
+
+
 
 
 
