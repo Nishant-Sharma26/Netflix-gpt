@@ -7,7 +7,7 @@ import {auth} from '../utils/firebase';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
-import { PHOTOURL } from '../utils/constant';
+import { BG_URL, PHOTOURL } from '../utils/constant';
 const Login = () => {
     const [isSignInForm, setisSignInForm] = useState(true);
     const  [errorMessage, seterrorMessage] = useState(null);
@@ -79,7 +79,7 @@ const Login = () => {
     <Header />
     <div className='absolute'>
       <img
-        src="https://assets.nflxext.com/ffe/siteui/vlv3/03ad76d1-e184-4d99-ae7d-708672fa1ac2/web/IN-en-20241111-TRIFECTA-perspective_149877ab-fcbd-4e4f-a885-8d6174a1ee81_large.jpg"
+        src={BG_URL}
       />
     </div>
    <form onSubmit = {(e)=>e.preventDefault() }className='w-3/12 p-12 bg-black absolute my-36 mx-auto right-0 left-0 text-white bg-opacity-80'>

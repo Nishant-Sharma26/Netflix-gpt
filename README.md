@@ -26,7 +26,18 @@
 - fetch data for trailer video
 - embedded the youtube video
 - tailwind classes to look main container awsome
+-  Build Secondary component
+- Build movie List
+- TMDB Image CDN url
+- Made the browse page amazing with tailwind css
+- use Popular Movie custom hooks
+- GPT search feature
+- GPT search Bar
+- Gpt Search Page
+- (multi language feature in our app)
 
+-  integrate gpt apis(get open api keys)
+-  
 
 
 
