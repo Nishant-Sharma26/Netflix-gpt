@@ -8,12 +8,12 @@ export default function MovieCard({ posterPath }) {
     : 'https://via.placeholder.com/200x300?text=No+Image';
     
   return (
-    <div className="w-40 flex-shrink-0 hover:scale-105 transition-transform duration-200">
+    <div className="w-36 md:w-40 flex-shrink-0 hover:scale-105 transition-transform duration-200">
       <img
         alt="Movie poster"
         src={imageUrl}
         loading="lazy"
-        className="rounded-lg shadow-md object-cover w-full h-60"
+        className="md:rounded-lg shadow-md object-cover w-full h-60"
       />
     </div>
   );
