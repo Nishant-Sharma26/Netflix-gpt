@@ -36,8 +36,16 @@
 - Gpt Search Page
 - (multi language feature in our app)
 
--  integrate gpt apis(get open api keys)
--  
+-  integrate gpt apis(get gemini api keys)
+-  Memoization
+- fetched gpt movie suggestions from tmdb
+
+- created gpt slice
+- reused movie list component to make movie suggestion container
+-  adding .env files
+- adding .env files to gitignore
+- made our site responsive
+
 
 
 
