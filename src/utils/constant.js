@@ -4,7 +4,7 @@
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer '+process.env.REACT_APP_TMDB_KEY
+      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxODgxOTI2ZDhmYmVhYTViY2Y0OGVjZDQwNWNkMWJlMyIsIm5iZiI6MTczOTkzNjU3Mi42MTMsInN1YiI6IjY3YjU1MzNjZDI4ZTg3ZTBlNWUzOWYzYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.21fdHUnaHiQSBv58OK32YDvH-rdoR9LlY1RYM-mI9ZA'
     }
   };
 
@@ -23,4 +23,4 @@
     },
   ];
 
-  export const GEMINIAPI_KEY = process.env.REACT_APP_GEMINIAPI_KEY;
+  export const GEMINIAPI_KEY = "AIzaSyAH80zEdH4-2vJ-PtRs8WAi7LwptfHbsnQ";
